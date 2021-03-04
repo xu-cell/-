@@ -20,4 +20,19 @@ int main()
 
 }
 //c++ primer p81 3.4
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+int main() 
+{
+	string str("Hello  World!!!");
+	decltype(str.size()) punct_cnt = 0;
+	for (auto c : str)
+		if (ispunct(c))
+			++punct_cnt;
+	cout << punct_cnt 
+		<< " punctuation characters    " << str << endl;
+	return 0;
+
 
